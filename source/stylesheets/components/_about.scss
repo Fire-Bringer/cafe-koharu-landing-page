@@ -11,7 +11,7 @@
   padding-top: 40px;
 }
 
-.about_taital {
+.about_title {
   width: 100%;
   float: left;
   font-size: 40px;
@@ -22,7 +22,7 @@
   padding-bottom: 0px;
 }
 
-.about_taital_box {
+.about_title_box {
   width: 500px;
   float: left;
   background: rgba(255, 255, 255, 0.1);
@@ -48,7 +48,7 @@
   border-radius: 1rem;
 }
 
-.about_taital_1 {
+.about_title_1 {
   width: 100%;
   float: left;
   font-size: 30px;
@@ -85,4 +85,11 @@
 .readmore_btn a:hover {
   color: #4a4949;
   border: 1px solid #4a4949;
+}
+
+/*BREAKPOINTS*/
+@media (max-width: 768px) {
+  .about_title_box {
+    width: 300px;
+  }
 }

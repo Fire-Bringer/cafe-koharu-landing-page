@@ -14,7 +14,6 @@
   border-radius: 1rem;
   backdrop-filter: blur(5px);
   height: auto;
-  width: 30rem;
   padding: 2rem;
   color: #fff;
   z-index: 20;
@@ -72,18 +71,46 @@
 }
 
 .heading{
-  font-size: clamp(2rem, 4.5vw, 4.5rem);
+  font-size: clamp(2.5rem, 4.5vw, 4.5rem);
   position: relative;
   z-index: 100;
 }
 
 .hero-content h6{
-  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+  font-size: clamp(1.1rem, 1.5vw, 1.5rem);
 }
 
 .hero-content dl{
   font-size: clamp(1rem, 1vw, 1.2rem);
 }
+
+/*BREAKPOINTS*/
+@media (max-width: 1024px) {
+  .hero-content {
+    margin-left: 8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container{
+    justify-content: center;
+  }
+  .hero-content {
+    margin-left: unset;
+    text-align: center;
+    padding: 1rem;
+  }
+  dd{
+    margin-bottom: unset;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero-content {
+    padding: 0.5rem;
+  }
+}
+
 
 /*
 body {
