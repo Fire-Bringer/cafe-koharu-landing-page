@@ -7,3 +7,7 @@
 body{
   background-color: #FBFAF5;
 }
+
+.best-title, .about-title, .menu-title, .gallery-title{
+  font-size: clamp(2rem, 3.5vw, 3.5rem);
+}
