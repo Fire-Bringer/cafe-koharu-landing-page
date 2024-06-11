@@ -3,14 +3,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 70vh;
   width: 100%;
+  background-image: image-url('backgrounds/wood_background2.png');
+  padding: 3rem 0;
 }
 
 .menu-title{
   width: 100%;
   float: left;
-  color: #3b3b3b;
+  color: #fff;
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
@@ -19,17 +21,20 @@
 
 // Menu Nav
 .menu-nav-container{
-  width: 80%;
-  background-color: #fff;
-  padding: 30px 10px;
-  border-radius: 15px;
+  width: 70%;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 2px solid rgba(255, 255, 255, 0.65);
+  border-left: 2px solid rgba(255, 255, 255, 0.65);
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+  border-radius: 1rem;
+  backdrop-filter: blur(5px);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 .menu-nav-container nav{
+  color: #fff;
   position: relative;
   height: 50px;
   width: 80%;
@@ -54,7 +59,7 @@
   text-align: center;
   line-height: 50px;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 1.5rem;
   font-weight: 600;
   transition: all 0.3s ease;
 }
@@ -100,7 +105,7 @@ input[type='radio']{
 
 .menu-section{
   filter: blur(0.3px);
-  width: 80%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -125,20 +130,20 @@ input[type='radio']{
 // Menu Cards
 .card-container-1, .card-container-2, .card-container-3{
   display: inline-flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 25px;
-  margin-top: 100px;
+  gap: 2rem;
+  margin-top: 3rem;
   width: 100%;
 }
 .card{
-  width: 325px;
-  background: rgba(255, 255, 255, 0.1);
+  width: 15rem;
+  background: rgba(255, 255, 255, 0.7);
   border-top: 2px solid rgba(255, 255, 255, 0.65);
   border-left: 2px solid rgba(255, 255, 255, 0.65);
   box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
   border-radius: 1rem;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
   overflow: hidden;
   transition: transform 0.6s ease;
 }
@@ -152,6 +157,7 @@ input[type='radio']{
 }
 .card-content{
   padding: 20px;
+  text-align: center;
 }
 .card-content h1{
   font-size: 24px;
@@ -169,4 +175,26 @@ input[type='radio']{
   text-decoration: none;
   border-radius: 1rem;
   padding: 8px 16px;
+}
+
+/*BREAKPOINTS*/
+@media screen and (max-width: 1024px){
+  .menu-nav-container{
+    width: 90%;
+  }
+}
+@media screen and (max-width: 576px){
+  .card {
+    width: 18rem;
+  }
+}
+@media screen and (max-width: 376px){
+  .card {
+    width: 15rem;
+  }
+}
+@media screen and (max-width: 321px){
+  .menu-nav-container nav label {
+    font-size: 1.2rem;
+  }
 }
