@@ -186,15 +186,8 @@ input[type='radio']{
 }
 @media screen and (max-width: 576px){
   .card {
-    width: 18rem;
-  }
-}
-@media screen and (max-width: 376px){
-  .card {
     width: 15rem;
   }
-}
-@media screen and (max-width: 321px){
   .menu-nav-container nav label {
     font-size: 1.2rem;
   }
