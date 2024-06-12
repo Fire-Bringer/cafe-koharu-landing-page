@@ -28,7 +28,7 @@ footer:hover::before{
 #footer-brand{
   font-family: "Umbriago NF W01 Regular";
   font-size: 1.5rem;
-  color: #fffe00cc;
+  color: #fff;
   text-shadow: 2px 2px #000000;
 }
 .access-info{
@@ -54,7 +54,7 @@ footer .social a{
   transition: all .5s ease;
   &:hover {
     transform: scale(1.2); /* Zoom in on hover */
-    color: #fffe00cc;
+    color: #E6E3AB;
   }
 
   &:active {
@@ -64,6 +64,7 @@ footer .social a{
 }
 .footer-text{
   margin-bottom: 0.5rem;
+  text-shadow: 1px 1px #000;
 }
 
 /* copyright */
@@ -83,7 +84,7 @@ footer .social a{
 .footer-content{
   display: flex;
   justify-content: space-between;
-  color: #fffe00cc;
+  color: #E6E3AB;
 }
 .fa-instagram{
   font-size: 3.5rem;

@@ -8,6 +8,7 @@ body{
   background-color: #FBFAF5;
 }
 
-.best-title, .about-title, .menu-title, .gallery-title{
+.best-title, .about_title, .menu-title, .gallery-title{
   font-size: clamp(2rem, 3.5vw, 3.5rem);
+  text-shadow: 2px 2px #000;
 }

@@ -15,10 +15,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
   z-index: 100;
+  text-shadow: 2px 2px #000;
 }
+
+// Nav On Scrolled
+.header.scrolled{
+  background-color: rgba(145, 138, 107, 0.7);
+  backdrop-filter: blur(15px);
+  animation: fixHeader .5s ease;
+  z-index: 100;
+}
+
 .header::before {
   content: "";
   position: absolute;
@@ -43,6 +53,12 @@
   text-decoration: none;
   font-weight: 600;
   cursor: default;
+}
+.shop_logo{
+  width: 4rem;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 2px 2px #000;
 }
 .navbar a {
   color: #fff;
@@ -100,5 +116,3 @@
     display: block;
   }
 }
-
-
