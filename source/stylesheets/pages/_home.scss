@@ -14,3 +14,45 @@ body{
   font-size: clamp(2rem, 3.5vw, 3.5rem);
   text-shadow: 2px 2px #000;
 }
+
+/* SPLASH SCREEN */
+
+.intro{
+  position: fixed;
+  z-index: 101;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.4)) , image-url('backgrounds/flower_background1.png');
+  transition: 1s;
+}
+
+.splash-header{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FBFAF5;
+  font-size: 3rem;
+  text-shadow: 2px 2px #000;
+}
+
+.splash{
+  position: relative;
+  display: inline-block;
+  bottom: -20px;
+  opacity: 0;
+}
+
+.splash.active{
+  bottom: 0;
+  opacity: 1;
+  transition: ease-in-out 0.5s;
+}
+
+.splash.fade{
+  bottom: 150px;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+}
