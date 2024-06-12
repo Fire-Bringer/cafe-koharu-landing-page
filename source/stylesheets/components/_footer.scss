@@ -93,11 +93,14 @@ footer .social a{
 }
 
 @media (max-width: 768px){
-  #footer-brand {
-    width: 12rem;
-  }
   .access-info {
     gap: 1rem;
+  }
+  #footer-brand{
+    font-size: 3rem;
+  }
+  .fa-instagram{
+    font-size: 5rem;
   }
 }
 
