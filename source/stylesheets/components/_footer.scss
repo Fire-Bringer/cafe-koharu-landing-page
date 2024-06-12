@@ -97,10 +97,7 @@ footer .social a{
     gap: 1rem;
   }
   #footer-brand{
-    font-size: 3rem;
-  }
-  .fa-instagram{
-    font-size: 5rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -119,12 +116,10 @@ footer .social a{
     padding: 1rem;
   }
   #footer-brand{
+    font-size: 3rem;
     margin-bottom: 0;
   }
-}
-
-@media (max-width: 435px){
-  .fa-brands{
-    font-size: 1.8rem;
+  .fa-instagram{
+    font-size: 5rem;
   }
 }
