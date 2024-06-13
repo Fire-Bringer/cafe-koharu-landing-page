@@ -58,6 +58,29 @@ const menuIcon = document.querySelector('#menu-icon');
       navbg.classList.toggle('active');
   });
 
+
+// Close menu when nav-link is clicked
+const navLink = document.querySelectorAll('.nav-link');
+
+navLink.forEach(n => n.addEventListener('click', closeMenu));
+
+function closeMenu() {
+  menuIcon.classList.remove('bx-x');
+  navbar.classList.remove('active');
+  navbg.classList.remove('active');
+}
+
+// Close menu when clicking outside of menuIcon and navbar
+document.body.addEventListener('click', function(event) {
+  const isClickInsideMenuIcon = menuIcon.contains(event.target);
+  const isClickInsideNavBar = navbar.contains(event.target);
+  if (!isClickInsideMenuIcon && !isClickInsideNavBar) {
+    menuIcon.classList.remove('active');
+    navbar.classList.remove('active');
+    navbg.classList.remove('active');
+  }
+});
+
   // Best Sellers Slider
   document.getElementById('next').onclick = function(){
     const widthItem = document.querySelector('.item').offsetWidth;
