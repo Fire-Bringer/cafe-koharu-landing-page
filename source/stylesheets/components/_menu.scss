@@ -79,7 +79,7 @@ input[type='radio']{
   height: 4.5px;
   background-color: #FF69B4;
   border-radius: 20px;
-  width: 20%;
+  width: 33%;
   z-index: 1;
   left: 0;
   bottom: 0;
@@ -88,10 +88,10 @@ input[type='radio']{
 }
 
 #drinks:checked ~ nav .menu-slider{
-  left: 40%;
+  left: 34%;
 }
 #sweets:checked ~ nav .menu-slider{
-  left: 80%;
+  left: 67%;
 }
 
 #food:checked ~ nav .food{
@@ -189,5 +189,28 @@ input[type='radio']{
   }
   .menu-nav-container nav label {
     font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 436px) {
+  .about_title_box {
+    margin-top: -3rem;
+  }
+  .card {
+      width: 12rem;
+      height: 18rem;
+  }
+  .card-img{
+    height: 50%;
+  }
+  .card-content {
+    padding: 10px;
+  }
+  .card-content p {
+    margin-bottom: 10px;
+  }
+  .card-content h1, .card-content .h1 {
+    font-size: 21px;
+    margin-bottom: 10px;
   }
 }
