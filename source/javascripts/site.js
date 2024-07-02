@@ -50,7 +50,7 @@ window.onscroll = function () {
 
 // Responsive Navbar
 const menuIcon = document.querySelector('#menu-icon');
-  const navbar = document.querySelector('.navbar');
+  const navbar = document.querySelector('.navi');
   const navbg = document.querySelector('.nav-bg');
   menuIcon.addEventListener('click', () => {
       menuIcon.classList.toggle('bx-x');
@@ -93,6 +93,7 @@ document.body.addEventListener('click', function(event) {
 
 });
 
+// Modal Popups
 function openModal(name, price, description, image) {
   document.getElementById('modalTitle').innerText = name;
   document.getElementById('modalPrice').innerText = price;

@@ -108,9 +108,14 @@
   }
 }
 
+@media (max-width: 426px) {
+  .hero-container {
+    height: 80vh;
+  }
+}
+
 @media (max-width: 320px) {
   .hero-content {
     padding: 0.5rem;
   }
 }
-
