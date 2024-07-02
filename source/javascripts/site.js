@@ -92,3 +92,22 @@ document.body.addEventListener('click', function(event) {
   }
 
 });
+
+function openModal(name, price, description, image) {
+  document.getElementById('modalTitle').innerText = name;
+  document.getElementById('modalPrice').innerText = price;
+  document.getElementById('modalDescription').innerText = description;
+  document.getElementById('modalImage').src = image;
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+// Close the modal when the user clicks anywhere outside of it
+window.onclick = function(event) {
+  if (event.target == document.getElementById('myModal')) {
+    document.getElementById('myModal').style.display = "none";
+  }
+}

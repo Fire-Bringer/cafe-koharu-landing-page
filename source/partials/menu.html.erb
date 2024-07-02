@@ -16,34 +16,30 @@
 
       <div class="menu-content card-container-1">
 
+      <% data.food.each do |item| %>
         <div class="card">
-          <%= image_tag "menu/menu1_cropped.png", class:"card-img" %>
+          <%= image_tag item.image, class:"card-img" %>
           <div class="card-content">
-            <h1>Menu One</h1>
-            <p>Price</p>
-            <a href="" class="card-button">Read More</a>
+            <h1><%= item.name %></h1>
+            <p><%= item.price %></p>
+            <a href="javascript:void(0);" class="card-button" onclick="openModal('<%= item.name %>', '<%= item.price %>', '<%= item.description %>', '<%= item.image %>')">Read More</a>
           </div>
         </div>
+      <% end %>
 
-        <div class="card">
-          <%= image_tag "menu/menu2_cropped.png", class:"card-img" %>
-          <div class="card-content">
-            <h1>Menu Two</h1>
-            <p>Price</p>
-            <a href="" class="card-button">Read More</a>
-          </div>
+      <!-- Modal structure -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img id="modalImage" src="" alt="Image" class="modal-img">
+          <h1 id="modalTitle"></h1>
+          <p id="modalPrice"></p>
+          <p id="modalDescription"></p>
         </div>
-
-        <div class="card">
-          <%= image_tag "menu/menu3_cropped.png", class:"card-img" %>
-          <div class="card-content">
-            <h1>Menu Three</h1>
-            <p>Price</p>
-            <a href="" class="card-button">Read More</a>
-          </div>
-        </div>
+      </div>
 
       </div>
+
 
       <div class="menu-content card-container-2">
 

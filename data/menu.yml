@@ -1,29 +1,29 @@
 - name: Menu 1 Item
   description: Menu 1 Description
-  image: menu/menu1.cropped.png
+  image: menu/menu1_cropped.png
   price: 2000 Yen
 
 - name: Menu 2 Item
   description: Menu 2 Description
-  image: menu/menu2.cropped.png
+  image: menu/menu2_cropped.png
   price: 2000 Yen
 
 - name: Menu 3 Item
   description: Menu 3 Description
-  image: menu/menu3.cropped.png
+  image: menu/menu3_cropped.png
   price: 2000 Yen
 
 - name: Menu 4 Item
   description: Menu 4 Description
-  image: menu/menu4.cropped.png
+  image: menu/menu4_cropped.png
   price: 2000 Yen
 
 - name: Menu 5 Item
   description: Menu 5 Description
-  image: menu/menu5.cropped.png
+  image: menu/menu5_cropped.png
   price: 2000 Yen
 
 - name: Menu 6 Item
   description: Menu 6 Description
-  image: menu/menu6.cropped.png
+  image: menu/menu6_cropped.png
   price: 2000 Yen
