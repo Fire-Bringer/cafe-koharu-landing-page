@@ -134,11 +134,11 @@ input[type='radio']{
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
   width: 100%;
 }
 .card{
-  width: 18rem;
+  width: 12rem;
   background: rgba(255, 255, 255, 0.7);
   border-top: 2px solid rgba(255, 255, 255, 0.65);
   border-left: 2px solid rgba(255, 255, 255, 0.65);
@@ -153,20 +153,21 @@ input[type='radio']{
 }
 .card-img{
   width: 100%;
-  height: auto;
+  height: 8.5rem;
   object-fit: cover;
 }
 .card-content{
-  padding: 20px;
+  padding: 12px;
   text-align: center;
 }
 .card-content h1{
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 .card-content p{
   font-size: 15px;
   color: #666;
+  margin-bottom: 0.5rem;
 }
 .card-button{
   display: inline-block;
@@ -183,9 +184,14 @@ input[type='radio']{
     width: 85%;
   }
 }
+@media screen and (max-width: 768px){
+  .card {
+    width: 10rem;
+  }
+}
 @media screen and (max-width: 576px){
   .card {
-    width: 15rem;
+    width: 12rem;
   }
   .menu-nav-container nav label {
     font-size: 1.2rem;
@@ -197,8 +203,7 @@ input[type='radio']{
     margin-top: -3rem;
   }
   .card {
-      width: 12rem;
-      height: 18rem;
+      width: 9rem;
   }
   .card-img{
     height: 50%;
@@ -212,5 +217,15 @@ input[type='radio']{
   .card-content h1, .card-content .h1 {
     font-size: 21px;
     margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .card {
+    width: 7rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  .card {
+    width: 6rem;
   }
 }

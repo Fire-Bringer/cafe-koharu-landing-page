@@ -1,0 +1,49 @@
+- name: Sweet 1 
+  description: Sweet 1 Description
+  image: images/sweets/sweet1_cropped.png
+  price: 2000 Yen
+
+- name: Sweet 2 
+  description: Sweet 2 Description
+  image: images/sweets/sweet2_cropped.png
+  price: 2000 Yen
+
+- name: Sweet 3 
+  description: Sweet 3 Description
+  image: images/sweets/sweet3_cropped.png
+  price: 2000 Yen
+
+- name: Sweet 4 
+  description: Sweet 4 Description
+  image: images/sweets/sweet2_cropped.png
+  price: 2000 Yen
+
+- name: Sweet 5 
+  description: Sweet 5 Description
+  image: images/sweets/sweet3_cropped.png
+  price: 2000 Yen
+
+- name: Sweet 6 
+  description: Sweet 6 Description
+  image: images/sweets/sweet1_cropped.png
+  price: 2000 Yen
+
+- name: Sweet 7 
+  description: Sweet 7 Description
+  image: images/sweets/sweet1_cropped.png
+  price: 2000 Yen
+
+- name: Sweet 8 
+  description: Sweet 8 Description
+  image: images/sweets/sweet2_cropped.png
+  price: 2000 Yen
+
+- name: Sweet 9 
+  description: Sweet 9 Description
+  image: images/sweets/sweet3_cropped.png
+  price: 2000 Yen
+
+- name: Sweet 10 
+  description: Sweet 10 Description
+  image: images/sweets/sweet1_cropped.png
+  price: 2000 Yen

@@ -99,7 +99,7 @@ function openModal(name, price, description, image) {
   document.getElementById('modalPrice').innerText = price;
   document.getElementById('modalDescription').innerText = description;
   document.getElementById('modalImage').src = image;
-  document.getElementById('myModal').style.display = "block";
+  document.getElementById('myModal').style.display = "flex";
 }
 
 function closeModal() {

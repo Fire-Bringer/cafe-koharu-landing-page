@@ -1,29 +1,49 @@
-- name: Food 1 Item
+- name: Food 1 
   description: Food 1 Description
   image: images/menu/menu1_cropped.png
   price: 2000 Yen
 
-- name: Food 2 Item
+- name: Food 2 
   description: Food 2 Description
   image: images/menu/menu2_cropped.png
   price: 2000 Yen
 
-- name: Food 3 Item
+- name: Food 3 
   description: Food 3 Description
   image: images/menu/menu3_cropped.png
   price: 2000 Yen
 
-- name: Food 4 Item
+- name: Food 4 
   description: Food 4 Description
   image: images/menu/menu4_cropped.png
   price: 2000 Yen
 
-- name: Food 5 Item
+- name: Food 5 
   description: Food 5 Description
   image: images/menu/menu5_cropped.png
   price: 2000 Yen
 
-- name: Food 6 Item
+- name: Food 6 
   description: Food 6 Description
   image: images/menu/menu6_cropped.png
+  price: 2000 Yen
+
+- name: Food 7 
+  description: Food 7 Description
+  image: images/menu/menu1_cropped.png
+  price: 2000 Yen
+
+- name: Food 8 
+  description: Food 8 Description
+  image: images/menu/menu2_cropped.png
+  price: 2000 Yen
+
+- name: Food 9 
+  description: Food 9 Description
+  image: images/menu/menu3_cropped.png
+  price: 2000 Yen
+
+- name: Food 10 
+  description: Food 10 Description
+  image: images/menu/menu4_cropped.png
   price: 2000 Yen
