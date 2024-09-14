@@ -1,49 +1,49 @@
-- name: Food 1 
+- name: Food 1
   description: Food 1 Description
-  image: images/menu/menu1_cropped.png
+  image: images/menu/best1.webp
   price: 2000 Yen
 
-- name: Food 2 
+- name: Food 2
   description: Food 2 Description
-  image: images/menu/menu2_cropped.png
+  image: images/menu/best2.webp
   price: 2000 Yen
 
-- name: Food 3 
+- name: Food 3
   description: Food 3 Description
-  image: images/menu/menu3_cropped.png
+  image: images/menu/best3.webp
   price: 2000 Yen
 
-- name: Food 4 
+- name: Food 4
   description: Food 4 Description
-  image: images/menu/menu4_cropped.png
+  image: images/menu/best4.webp
   price: 2000 Yen
 
-- name: Food 5 
+- name: Food 5
   description: Food 5 Description
-  image: images/menu/menu5_cropped.png
+  image: images/menu/best5.webp
   price: 2000 Yen
 
-- name: Food 6 
+- name: Food 6
   description: Food 6 Description
-  image: images/menu/menu6_cropped.png
+  image: images/menu/best1.webp
   price: 2000 Yen
 
-- name: Food 7 
+- name: Food 7
   description: Food 7 Description
-  image: images/menu/menu1_cropped.png
+  image: images/menu/best2.webp
   price: 2000 Yen
 
-- name: Food 8 
+- name: Food 8
   description: Food 8 Description
-  image: images/menu/menu2_cropped.png
+  image: images/menu/best3.webp
   price: 2000 Yen
 
-- name: Food 9 
+- name: Food 9
   description: Food 9 Description
-  image: images/menu/menu3_cropped.png
+  image: images/menu/best4.webp
   price: 2000 Yen
 
-- name: Food 10 
+- name: Food 10
   description: Food 10 Description
-  image: images/menu/menu4_cropped.png
+  image: images/menu/best5.webp
   price: 2000 Yen
