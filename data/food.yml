@@ -37,13 +37,3 @@
   description: Food 8 Description
   image: images/menu/best3.webp
   price: 2000 Yen
-
-- name: Food 9
-  description: Food 9 Description
-  image: images/menu/best4.webp
-  price: 2000 Yen
-
-- name: Food 10
-  description: Food 10 Description
-  image: images/menu/best5.webp
-  price: 2000 Yen
