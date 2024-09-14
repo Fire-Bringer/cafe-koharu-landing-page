@@ -1,29 +1,24 @@
 - name: Menu 1
   description: Menu 1 Description
-  image: menu/menu1_cropped.png
+  image: menu/best1.webp
   price: 2000 Yen
 
 - name: Menu 2
   description: Menu 2 Description
-  image: menu/menu2_cropped.png
+  image: menu/best2.webp
   price: 2000 Yen
 
 - name: Menu 3
   description: Menu 3 Description
-  image: menu/menu3_cropped.png
+  image: menu/best3.webp
   price: 2000 Yen
 
 - name: Menu 4
   description: Menu 4 Description
-  image: menu/menu4_cropped.png
+  image: menu/best4.webp
   price: 2000 Yen
 
 - name: Menu 5
   description: Menu 5 Description
-  image: menu/menu5_cropped.png
-  price: 2000 Yen
-
-- name: Menu 6
-  description: Menu 6 Description
-  image: menu/menu6_cropped.png
+  image: menu/best5.webp
   price: 2000 Yen

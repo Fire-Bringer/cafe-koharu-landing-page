@@ -1,49 +1,39 @@
 - name: Drink 1 Item
   description: Drink 1 Description
-  image: images/drinks/drink1_cropped.png
+  image: images/drinks/drink.webp
   price: 2000 Yen
 
 - name: Drink 2 Item
   description: Drink 2 Description
-  image: images/drinks/drink2_cropped.png
+  image: images/drinks/drink.webp
   price: 2000 Yen
 
 - name: Drink 3 Item
   description: Drink 3 Description
-  image: images/drinks/drink3_cropped.png
+  image: images/drinks/drink.webp
   price: 2000 Yen
 
 - name: Drink 4 Item
   description: Drink 4 Description
-  image: images/drinks/drink4_cropped.png
+  image: images/drinks/drink.webp
   price: 2000 Yen
 
 - name: Drink 5 Item
   description: Drink 5 Description
-  image: images/drinks/drink5_cropped.png
+  image: images/drinks/drink.webp
   price: 2000 Yen
 
 - name: Drink 6 Item
   description: Drink 6 Description
-  image: images/drinks/drink6_cropped.png
+  image: images/drinks/drink.webp
   price: 2000 Yen
 
 - name: Drink 7 Item
   description: Drink 7 Description
-  image: images/drinks/drink1_cropped.png
+  image: images/drinks/drink.webp
   price: 2000 Yen
 
 - name: Drink 8 Item
   description: Drink 8 Description
-  image: images/drinks/drink2_cropped.png
-  price: 2000 Yen
-
-- name: Drink 9 Item
-  description: Drink 9 Description
-  image: images/drinks/drink3_cropped.png
-  price: 2000 Yen
-
-- name: Drink 10 Item
-  description: Drink 10 Description
-  image: images/drinks/drink4_cropped.png
+  image: images/drinks/drink.webp
   price: 2000 Yen
