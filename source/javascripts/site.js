@@ -1,38 +1,39 @@
 document.addEventListener('DOMContentLoaded', function() {
 
 // Splash Screen
-let intro = document.querySelector('.intro');
-let splash = document.querySelector('.splash-header');
-let splashSpan = document.querySelectorAll('.splash');
+window.addEventListener('load', () => {
+  let intro = document.querySelector('.intro');
+  let splash = document.querySelector('.splash-header');
+  let splashSpan = document.querySelectorAll('.splash');
+  let mainContent = document.querySelector('.main-content'); // Assuming you have a main content section
 
-window.addEventListener('DOMContentLoaded', ()=>{
+  // Hide main content initially
+  mainContent.style.display = 'none';
 
-  setTimeout(()=>{
-
-    splashSpan.forEach((span, idx)=>{
-      setTimeout(()=>{
+  setTimeout(() => {
+    splashSpan.forEach((span, idx) => {
+      setTimeout(() => {
         span.classList.add('active');
-      }, (idx + 1) * 800)
+      }, (idx + 1) * 800);
     });
 
-    setTimeout(()=>{
-      splashSpan.forEach((span, idx)=>{
-
-        setTimeout(()=>{
+    setTimeout(() => {
+      splashSpan.forEach((span, idx) => {
+        setTimeout(() => {
           span.classList.remove('active');
           span.classList.add('fade');
-        }, (idx + 1) * 350)
+        }, (idx + 1) * 350);
+      });
+    }, 4000);
 
-      })
-    },4000);
+    setTimeout(() => {
+      intro.style.top = '-100vh'; // Slide the splash screen out
+      mainContent.style.display = 'block'; // Show main content
+    }, 4300);
 
-    setTimeout(()=>{
-      intro.style.top = '-100vh';
-    }, 4300)
+  }, 100); // Add a slight delay to allow assets to load properly
+});
 
-  })
-
-})
 
 // Navbar on Scroll
 window.onscroll = function () {
