@@ -5,10 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
     let intro = document.querySelector('.intro');
     let splash = document.querySelector('.splash-header');
     let splashSpan = document.querySelectorAll('.splash');
-    let mainContent = document.querySelector('.main-content'); // Assuming you have a main content section
+    let mainContent = document.querySelector('.main-content');
 
     // Hide main content initially
-    mainContent.style.display = 'none';
+    mainContent.style.visibility = 'hidden'; // Instead of display: none
+    mainContent.style.opacity = 0; // Initial opacity for fade-in effect
 
     setTimeout(() => {
       splashSpan.forEach((span, idx) => {
@@ -28,37 +29,38 @@ document.addEventListener('DOMContentLoaded', function() {
 
       setTimeout(() => {
         intro.style.top = '-100vh'; // Slide the splash screen out
-        mainContent.style.display = 'block'; // Show main content
+        // Make the main content visible and fade it in
+        mainContent.style.visibility = 'visible';
+        mainContent.style.transition = 'opacity 3s ease';
+        mainContent.style.opacity = 1;
       }, 4300);
 
     }, 100); // Add a slight delay to allow assets to load properly
   });
-
 
   // Navbar on Scroll
   window.onscroll = function () {
     const docScrollTop = document.documentElement.scrollTop;
 
     if (window.innerWidth > 991) {
-        if (docScrollTop > 100) {
-            document.querySelector('.header').classList.add('scrolled')
-        }
-        else {
-            document.querySelector('.header').classList.remove('scrolled')
-        }
+      if (docScrollTop > 100) {
+        document.querySelector('.header').classList.add('scrolled')
+      }
+      else {
+        document.querySelector('.header').classList.remove('scrolled')
+      }
     }
   }
 
   // Responsive Navbar
   const menuIcon = document.querySelector('#menu-icon');
-    const navbar = document.querySelector('.navi');
-    const navbg = document.querySelector('.nav-bg');
-    menuIcon.addEventListener('click', () => {
-        menuIcon.classList.toggle('bx-x');
-        navbar.classList.toggle('active');
-        navbg.classList.toggle('active');
-    });
-
+  const navbar = document.querySelector('.navi');
+  const navbg = document.querySelector('.nav-bg');
+  menuIcon.addEventListener('click', () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+    navbg.classList.toggle('active');
+  });
 
   // Close menu when nav-link is clicked
   const navLink = document.querySelectorAll('.nav-link');
@@ -82,34 +84,34 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-    // Best Sellers Slider
-    document.getElementById('next').onclick = function(){
-      const widthItem = document.querySelector('.item').offsetWidth;
-      document.getElementById('formList').scrollLeft += widthItem;
-    }
-    document.getElementById('prev').onclick = function(){
-      const widthItem = document.querySelector('.item').offsetWidth;
-      document.getElementById('formList').scrollLeft -= widthItem;
-    }
-
-  });
-
-  // Modal Popups
-  function openModal(name, price, description, image) {
-    document.getElementById('modalTitle').innerText = name;
-    document.getElementById('modalPrice').innerText = price;
-    document.getElementById('modalDescription').innerText = description;
-    document.getElementById('modalImage').src = image;
-    document.getElementById('myModal').style.display = "flex";
+  // Best Sellers Slider
+  document.getElementById('next').onclick = function(){
+    const widthItem = document.querySelector('.item').offsetWidth;
+    document.getElementById('formList').scrollLeft += widthItem;
+  }
+  document.getElementById('prev').onclick = function(){
+    const widthItem = document.querySelector('.item').offsetWidth;
+    document.getElementById('formList').scrollLeft -= widthItem;
   }
 
-  function closeModal() {
+});
+
+// Modal Popups
+function openModal(name, price, description, image) {
+  document.getElementById('modalTitle').innerText = name;
+  document.getElementById('modalPrice').innerText = price;
+  document.getElementById('modalDescription').innerText = description;
+  document.getElementById('modalImage').src = image;
+  document.getElementById('myModal').style.display = "flex";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+// Close the modal when the user clicks anywhere outside of it
+window.onclick = function(event) {
+  if (event.target == document.getElementById('myModal')) {
     document.getElementById('myModal').style.display = "none";
   }
-
-  // Close the modal when the user clicks anywhere outside of it
-  window.onclick = function(event) {
-    if (event.target == document.getElementById('myModal')) {
-      document.getElementById('myModal').style.display = "none";
-    }
-  }
+}
