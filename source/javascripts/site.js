@@ -1,23 +1,23 @@
 document.addEventListener('DOMContentLoaded', function() {
-
   // Splash Screen
   window.addEventListener('load', () => {
     let intro = document.querySelector('.intro');
-    let splash = document.querySelector('.splash-header');
     let splashSpan = document.querySelectorAll('.splash');
     let mainContent = document.querySelector('.main-content');
 
     // Hide main content initially
-    mainContent.style.visibility = 'hidden'; // Instead of display: none
-    mainContent.style.opacity = 0; // Initial opacity for fade-in effect
+    mainContent.style.visibility = 'hidden'; // Main content is hidden
+    mainContent.style.opacity = 0; // Set opacity to 0 for fade-in effect later
 
+    // Show the splash screen animation
     setTimeout(() => {
       splashSpan.forEach((span, idx) => {
         setTimeout(() => {
           span.classList.add('active');
-        }, (idx + 1) * 800);
+        }, (idx + 1) * 800); // Sequentially activate splash elements
       });
 
+      // Fade out splash screen text
       setTimeout(() => {
         splashSpan.forEach((span, idx) => {
           setTimeout(() => {
@@ -25,17 +25,22 @@ document.addEventListener('DOMContentLoaded', function() {
             span.classList.add('fade');
           }, (idx + 1) * 350);
         });
-      }, 4000);
+      }, 4000); // Adjust the time to match your animation duration
 
+      // End splash and show main content
       setTimeout(() => {
-        intro.style.top = '-100vh'; // Slide the splash screen out
-        // Make the main content visible and fade it in
-        mainContent.style.visibility = 'visible';
-        mainContent.style.transition = 'opacity 3s ease';
-        mainContent.style.opacity = 1;
-      }, 4300);
+        // Slide splash screen out
+        intro.style.top = '-100vh'; // Move the splash screen out of view
 
-    }, 100); // Add a slight delay to allow assets to load properly
+        // Fade in the main content
+        setTimeout(() => {
+          mainContent.style.visibility = 'visible';
+          mainContent.style.opacity = 1;
+        }, 500); // Slight delay to ensure smooth transition
+
+      }, 4300); // Matches the timing of your splash screen animation
+
+    }, 100); // Slight delay for assets to load properly
   });
 
   // Navbar on Scroll
@@ -44,13 +49,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (window.innerWidth > 991) {
       if (docScrollTop > 100) {
-        document.querySelector('.header').classList.add('scrolled')
-      }
-      else {
-        document.querySelector('.header').classList.remove('scrolled')
+        document.querySelector('.header').classList.add('scrolled');
+      } else {
+        document.querySelector('.header').classList.remove('scrolled');
       }
     }
-  }
+  };
 
   // Responsive Navbar
   const menuIcon = document.querySelector('#menu-icon');
@@ -64,7 +68,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Close menu when nav-link is clicked
   const navLink = document.querySelectorAll('.nav-link');
-
   navLink.forEach(n => n.addEventListener('click', closeMenu));
 
   function closeMenu() {
@@ -88,12 +91,12 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('next').onclick = function(){
     const widthItem = document.querySelector('.item').offsetWidth;
     document.getElementById('formList').scrollLeft += widthItem;
-  }
+  };
+
   document.getElementById('prev').onclick = function(){
     const widthItem = document.querySelector('.item').offsetWidth;
     document.getElementById('formList').scrollLeft -= widthItem;
-  }
-
+  };
 });
 
 // Modal Popups
@@ -114,4 +117,4 @@ window.onclick = function(event) {
   if (event.target == document.getElementById('myModal')) {
     document.getElementById('myModal').style.display = "none";
   }
-}
+};
