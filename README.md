@@ -1,6 +1,6 @@
 # ☕ Cafe Koharu
 
-A landing page made for a small cafe within Kanazawa. Designed with a calmning aesthetic which reflects the soft nature of the owner and interior of the shop. 
+A landing page made for a small cafe within Kanazawa. Designed with a calming aesthetic which reflects the soft nature of the owner and interior of the shop. 
 
 ### Features
 - A revolving hero image which automatically fades within transitions of 3 images.
