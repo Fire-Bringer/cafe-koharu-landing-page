@@ -28,7 +28,7 @@ Gallery
 ![koharu-gallery](https://github.com/user-attachments/assets/b164fcec-117d-4102-86a8-ad61ecbf71b7)
 
 
-Project Page: https://cafehokaru.netlify.app/
+Project Page: https://cafekoharu.netlify.app/
 
 
 ## Built With
