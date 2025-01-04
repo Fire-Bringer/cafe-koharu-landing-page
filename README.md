@@ -3,8 +3,9 @@
 A landing page made for a small cafe within Kanazawa in mind. Designed with a calming aesthetic which reflects the soft nature of the owner and interior of the shop. 
 
 ### Features
-- A revolving hero image which automatically fades within transitions of 3 images.
-- Glassmorphic design of the navbar, hero content and menu background.
+- A simple intro image which reveals the hero through a scroll animation
+- A revolving hero image which automatically fades within transitions of 3 images
+- Glassmorphic design of the navbar, hero content and menu background
 - Best sellers section which scrolls under the hero
 - A menu which switches between food, drink and sweets options
 - A modal popup for each menu item to display more detailed information
