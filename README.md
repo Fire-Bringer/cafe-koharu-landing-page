@@ -37,6 +37,7 @@ Project Page: https://cafekoharu.netlify.app/
 
 ## Built With
 - [Middleman](https://middlemanapp.com/) - Backend / Front-end
+- [Photoshop](https://www.adobe.com/products/photoshop.html) - Image Prep
 
 ## Designer / Developer
 - [Rashad Dupaty](https://www.linkedin.com/in/rashaddupaty/)
