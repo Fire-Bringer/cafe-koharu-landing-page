@@ -12,6 +12,9 @@ A landing page made for a small cafe within Kanazawa in mind. Designed with a ca
 
 ### Screenshots:
 
+Intro Animation
+![Koharu-Intro](https://github.com/user-attachments/assets/cb418d89-b255-4397-b311-e0323d25c70e)
+
 Landing Page Hero
 ![koharu-hero](https://github.com/user-attachments/assets/a14d7ea0-254e-4bf9-8c13-51203779a0be)
 
